@@ -38,7 +38,7 @@ This project is designed to scrape product information from e-commerce websites 
    
 6. **Usage**:
 
-    * Modify the scraper scripts (jumia_scraper.py, spacenet_scraper.py, etc.) to adjust scraping parameters (search queries).
+    * Modify the scraper scripts (jumia scraper.py, spacenet scraper.py, etc.) to adjust scraping parameters (search queries).
    * Data is saved automatically to a CSV file. Customize the CSV formatting as needed.
      
 7. **Contributing**:
