@@ -24,7 +24,11 @@ def scrape_products(search_query):
         soup = BeautifulSoup(response.content, 'lxml')
         
         if totalPages is None:
-            totalProductsText = soup.find("div", {'class': 'total-products'}).find("p").text
+            totalProductsDiv = soup.find("div", {'class': 'total-products'})
+            # Total Products Number Not Found Meaning there is no product found
+            if totalProductsDiv == None:
+                return []
+            totalProductsText = totalProductsDiv.find("p").text
             # Split the string by spaces
             parts = totalProductsText.split()
 
@@ -75,8 +79,7 @@ def scrape_products(search_query):
     return products
 
 # Scrape product data
-scraped_data = scrape_products("pc")
-
+scraped_data = scrape_products("velo")
 # Define CSV file path
 csv_file = 'spacenet_scraped_products.csv'
 
