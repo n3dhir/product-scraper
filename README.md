@@ -15,7 +15,7 @@ This project is designed to scrape product information from e-commerce websites 
 1. **Clone the repository**:
    
    ```sh
-   https://github.com/n3dhir/product-scraper.git
+   git clone https://github.com/n3dhir/product-scraper.git
    cd product-scraper
    
 3. **Install dependencies**:
