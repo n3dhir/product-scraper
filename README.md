@@ -31,7 +31,8 @@ This project is designed to scrape product information from e-commerce websites 
    
 5. **Run the scraper**:
      ```sh
-     python jumia_scraper.py
+     python "jumia scraper.py"
+     
       ```
      Replace jumia_scraper.py with the appropriate scraper script for the website you want to scrape (spacenet_scraper.py, for instance).
    
